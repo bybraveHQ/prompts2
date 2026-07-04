@@ -1,0 +1,64 @@
+{
+  "name": "@bybrave/prompts2",
+  "version": "3.0.0",
+  "description": "Maintained fork of prompts — lightweight, beautiful and user-friendly interactive prompts",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js"
+    },
+    "./package.json": "./package.json",
+    "./lib/*": "./lib/*"
+  },
+  "files": [
+    "lib",
+    "index.js",
+    "index.mjs",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js test/*.test.mjs",
+    "test-types": "tsc --noEmit --strict test/type-declarations.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bybraveHQ/prompts2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bybraveHQ/prompts2/issues"
+  },
+  "homepage": "https://github.com/bybraveHQ/prompts2#readme",
+  "keywords": [
+    "prompts",
+    "prompt",
+    "cli",
+    "interactive",
+    "command-line",
+    "input",
+    "stdin",
+    "menu",
+    "ask",
+    "typescript",
+    "esm"
+  ],
+  "author": "bybrave (https://github.com/bybraveHQ)",
+  "contributors": [
+    "Terkel Gjervig <terkel@terkel.com> (author of the original prompts)"
+  ],
+  "license": "MIT",
+  "funding": "https://ko-fi.com/bybrave",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "kleur": "^4.1.5",
+    "sisteransi": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
